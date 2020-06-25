@@ -14,7 +14,11 @@ function removeAllChildren(element) {
     element.removeChild(element.firstChild);
   }
 }
-
+userNameInput.onkeydown = event => {
+  if (event.key === 'Enter') {
+    
+  }
+};
 assessmentButton.onclick = () => {
   const userName = userNameInput.value;
   if (userName.length === 0) {
